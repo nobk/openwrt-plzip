@@ -38,6 +38,7 @@ define Package/plzip/install
 	$(INSTALL_DIR) $(1)/usr/bin
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/$(PKG_NAME) $(1)/usr/bin
 	$(TOOLCHAIN_DIR)/bin/$(TARGET_CROSS)strip -s $(1)/usr/bin/$(PKG_NAME)
+	$(LN) -s $(PKG_NAME) $(1)/usr/bin/lzip
 endef
 
 $(eval $(call BuildPackage,plzip))
