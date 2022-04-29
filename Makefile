@@ -8,12 +8,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=plzip
-PKG_VERSION:=1.9
+PKG_VERSION:=1.10
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=http://download.savannah.gnu.org/releases/lzip/$(PKG_NAME)
-PKG_HASH:=14d8d1db8dde76bdd9060b59d50b2943417eb4c0fbd2b84736546b78fab5f1a7
+PKG_HASH:=43faa58265d8b89ad75bd4ed11d347ef10065a8070748bc1ed0e06f191458098
 PKG_MAINTAINER:=
 PKG_LICENSE:=GPL-2.0-or-later
 
